@@ -49,13 +49,12 @@ contract SwapEthAndGold is Ownable {
             "Contract hasn't got enough GOLD tokens to cover this swap."
         );
 
-        bool isTranssfered;
-        isTranssfered = gldToken.transfer(
+        bool isTransferred = gldToken.transfer(
             msg.sender,
             amountOfGLDTokensToBeBought
         );
         require(
-            isTranssfered == true,
+            isTransferred == true,
             "Transfer of the GOLD tokens has failed."
         );
 
@@ -81,13 +80,13 @@ contract SwapEthAndGold is Ownable {
             "Contract has not enough ETH."
         );
 
-        bool isTranssfered = gldToken.transferFrom(
+        bool isTransferred = gldToken.transferFrom(
             msg.sender,
             address(this),
             amountGLD
         );
         require(
-            isTranssfered == true,
+            isTransferred == true,
             "Transfer of the GOLD tokens has failed."
         );
 
