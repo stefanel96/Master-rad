@@ -1,22 +1,24 @@
-# Master-rad
-## Implementacija decentralizovanog tržišta nezamenjivih tokena u industriji video igara
+# Master's Thesis
 
-### Tehnologije
-Projekat koristi sledeće tehnologije:
-- **Solidity**: Jezik za pisanje pametnih ugovora.
-- **Hardhat**: Okruženje za razvoj, testiranje i postavljanje pametnih ugovora na Ethereum blokčejnu.
-- **Chai**: Biblioteka za pisanje testova koja omogućava lakše testiranje pametnih ugovora.
+Implementation of a decentralized non-fungible token (NFT) marketplace for the video game industry.
 
-### Postavljanje okruženja
-Da biste postavili okruženje, pratite sledeće korake:
+## Technologies
 
-1. Pozicionirajte se u koreni folder projekta.
-2. Instalirajte potrebne biblioteke: ```npm install```
-3. Podignite lokalni čvor Ethereum blokčejna:
-```npx hardhat node```
-4. Otvorite novu instancu terminala.
-5. Postavite pametne ugovore na blokčejn: ```npx hardhat run ./src/backend/scripts/deploy.js --network localhost```
-6. Pokrenite Hardhat konzolu:
-```npx hardhat console```
+This project uses the following technologies:
 
-Sada možete vršiti interakciju sa pametnim ugovorima na lokalnom blokčejnu koristeći adrese koje su kreirane prilikom postavljanja pametnih ugovora.
+* **Solidity** – language for writing smart contracts.
+* **Hardhat** – development environment for compiling, testing, and deploying smart contracts on the Ethereum blockchain.
+* **Chai** – testing library that makes it easier to test smart contracts.
+
+## Environment Setup
+
+To set up the environment, follow these steps:
+
+1. Navigate to the project's root folder.
+2. Install the required dependencies: `npm install`
+3. Start a local Ethereum blockchain node: `npx hardhat node`
+4. Open a new terminal instance.
+5. Deploy the smart contracts to the blockchain: `npx hardhat run ./src/backend/scripts/deploy.js --network localhost`
+6. Launch the Hardhat console: `npx hardhat console`
+
+You can now interact with the smart contracts on the local blockchain using the addresses generated during deployment.
